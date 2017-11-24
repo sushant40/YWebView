@@ -17,4 +17,8 @@
 // workaround http://stackoverflow.com/questions/31094110/memory-leak-when-using-wkscriptmessagehandler
 // put the message handler name here, YWebView will remove them when dealloc
 - (void)addScriptMessageHandlerNameForCleanup:(NSString*)name;
+
+//Making accessable from outside.
++ (void)addCookieInScriptWithController:(WKUserContentController*)userContentController;
+
 @end
